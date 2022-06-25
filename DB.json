@@ -1,0 +1,106 @@
+{
+  "restaurant": [
+    {
+      "Name": "Bikaji",
+      "Email": "bikaji123@gmail.com",
+      "Address": "Rameshwaram",
+      "id": 1
+    },
+    {
+      "Name": "Haldiram",
+      "Email": "haldiram12456@gmail.com",
+      "Address": "pahalgam",
+      "id": 2
+    },
+    {
+      "Name": "McDonalds",
+      "Email": "McDonalds125@gmail.com",
+      "Address": "pahalgam",
+      "id": 3
+    },
+    {
+      "Name": "Dominos",
+      "Email": "Dominos123@gmail.com",
+      "Address": "Cherrapunji",
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "Name": "akshita",
+      "Email": "akshita123@gmail.com",
+      "Password": "1234",
+      "id": 1
+    },
+    {
+      "Name": "Araya",
+      "Email": "araya123@gmail.com",
+      "Password": "1234",
+      "id": 2
+    },
+    {
+      "Name": "ashaira",
+      "Email": "ashaira123@gmail.com",
+      "Password": "1234",
+      "id": 3
+    },
+    {
+      "Name": "adg",
+      "Email": "jguj",
+      "Password": "1234",
+      "confirmPwd": "",
+      "id": 4
+    },
+    {
+      "Name": "",
+      "Email": "",
+      "Password": "123",
+      "confirmPwd": "",
+      "id": 5
+    },
+    {
+      "Name": null,
+      "Email": null,
+      "Password": "123",
+      "confirmPwd": null,
+      "id": 6
+    }
+  ],
+  "Orders": [
+    {
+      "Name": "Akshita",
+      "Food": "Pastries",
+      "Email": "Akshita123@gmail.com",
+      "Address": "Agra",
+      "id": 1
+    },
+    {
+      "Name": "aarush",
+      "Food": "veg thali",
+      "Email": "aarush123@gmail.com",
+      "Address": "ludhiana",
+      "id": 2
+    },
+    {
+      "Name": "taaavi",
+      "Food": "momos",
+      "Email": "taavi123@gmail.com",
+      "Address": "kanpur",
+      "id": 3
+    },
+    {
+      "Name": "akira",
+      "Email": "akira123@gmail.com",
+      "Address": "moga",
+      "Food": "Pastries",
+      "id": 5
+    },
+    {
+      "Name": "",
+      "Email": "",
+      "Address": "",
+      "Food": "Pastries",
+      "id": 6
+    }
+  ]
+}

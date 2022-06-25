@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "resto-authentication12": {
+      "hosting": {
+        "blog": [
+          "resto-authentication12"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "resto-authentication12"
+  }
+}

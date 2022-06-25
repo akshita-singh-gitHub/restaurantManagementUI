@@ -1,0 +1,19 @@
+<div *ngIf="listItem">
+    <h2>{{ listItem.name }}</h2>
+    <div>
+      Name:
+      <input [(ngModel)]="listItem.name"  />
+    </div>
+    <div>
+      Email:
+      <input [(ngModel)]="listItem.email"  />
+    </div>
+    <div>
+     Address
+      <input [(ngModel)]="listItem.address"  />
+    </div>
+    
+    <!-- <button (click)="updatelistItem(listItem)" *ngIf="listItem.id">Save</button>
+    <button (click)="deletelistItem(listItem)" *ngIf="listItem.id">Delete</button>
+    <button (click)="createlistItem(listItem)" *ngIf="!listItem.id">Create</button> -->
+  </div>

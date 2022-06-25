@@ -1,0 +1,98 @@
+<!-- 
+<h3 class="heading">Register Yourself Here</h3>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong> Success!</strong> You are registered in Resto Successfully
+    <button (click)="CloseAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<form [formGroup]="RegisterForm" (ngSubmit)="CollectUser()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label" >Name </label>
+      <input type="text" class="form-control"  formControlName="Name"  placeholder="Enter Your Name Here">
+      <div *ngIf="Name?.invalid && Name?.touched">
+        <small *ngIf="Name?.errors?.['required']" class="text-danger " > Name is Required</small>
+        <small *ngIf="Name?.errors?.['minlength']" class="text-danger " > Minimum characters should be 3</small>
+        <small *ngIf="Name?.errors?.['pattern']" class="text-danger " >only a-z ,A-Z character can be used</small>
+      </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control"  formControlName="Email" placeholder="We'll never share your email with anyone else." >
+      <div *ngIf="Email?.invalid && Email?.touched">
+        <small *ngIf="Email?.errors?.['required']" class="text-danger " > Name is Required</small>
+        <small *ngIf="Email?.errors?.['email']" class="text-danger " > It should be of Email format</small>
+      </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"> Password</label>
+      <input type="password" class="form-control"   formControlName="Password" placeholder="Enter password">
+      <div *ngIf="Password?.invalid && Password?.touched">
+        <small *ngIf="Password?.errors?.['required']" class="text-danger " > Name is Required</small>
+        <small *ngIf="Password?.errors?.['minlength']" class="text-danger " >Minimum 4 character are required</small>
+      </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+      <input [class.is-invalid]="RegisterForm?.errors?.['mismatch']" type="password" class="form-control"   formControlName="ConfirmPwd" placeholder="Enter password">
+      <div *ngIf="ConfirmPwd?.invalid && ConfirmPwd?.touched">
+        <small *ngIf="ConfirmPwd?.errors?.['required']" class="text-danger " > Name is Required</small>
+        <small *ngIf="ConfirmPwd?.errors?.['minlength']" class="text-danger " >Minimum 4 character are required</small>
+      </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    
+    
+    
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> -->
+
+
+
+
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col"></div>
+      <div class="col-4">
+  <div class="card shadow">
+    <div class="card-body">
+      <form>
+        <div class="mb-3">
+          <h4 class="text-dark text-muted">Signup</h4>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" [(ngModel)]="email" >
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" [(ngModel)]="password"  >
+        </div>
+    
+        <button type="button" class="btn btn-info"  (click)="register()">signup</button>
+        <div class="row">
+       
+        </div>
+      </form>
+    </div>
+  </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+

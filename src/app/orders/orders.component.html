@@ -1,0 +1,38 @@
+
+<h3 class="heading">FOOD ITEMS</h3>
+<div id="order" class="order-container">
+
+<ul>
+  <li  *ngFor="let food of FoodImages">
+   <a routerLink="/checkout/{{food.id}}" >
+   <img src="{{food.imageUrl}}" alt="">
+  <div class="content">
+  <div class="name">
+    {{food.name}}
+  </div>
+  <span class="favourite {{food.favourite?'':'not'}}">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </span>
+  <div class="product-item-footer">
+    <div class="cook-time">
+      <span>
+        🕑
+      </span>
+{{food.CookTime}}
+    </div>
+    
+  </div>
+  <div class="price">
+    {{food.price| currency}}
+  </div>
+  <div >
+    
+    <button type="submit" class="btn btn-primary">Order Now</button>
+ 
+  </div>
+  </div>
+  </a>
+
+  </li>
+</ul>
+</div>

@@ -1,0 +1,46 @@
+<div class="container2">
+<h3 class="heading">Add Restaurant Details</h3>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong> Success!</strong> You are registered in Resto Successfully
+  <button (click)="CloseAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="RestoForm" (ngSubmit)="CollectResto()">
+    <div class="mb-3" > 
+      <label for="exampleInputEmail1" class="form-label" >name </label>
+      <input   type="text"  class="form-control"  formControlName="name"  placeholder="Enter Your name Here">
+      
+      <!-- <small  [class.d-none]="name?.valid || name?.untouched"  class="text-danger " > name is Required</small> -->
+      <!-- using ngIf for conditionally showing msg nd not d-none class -->
+
+      <div *ngIf="name?.invalid && name?.touched">
+      <small *ngIf="name?.errors?.['required']" class="text-danger " > name is Required</small>
+      <small *ngIf="name?.errors?.['minlength']" class="text-danger " > Minimum characters should be 3</small>
+      <small *ngIf="name?.errors?.['pattern']" class="text-danger " >only a-z ,A-Z character can be used</small>
+    </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"> address</label>
+      <input    type="text" class="form-control"   formControlName="address" placeholder="Enter address">
+       <small *ngIf ="address?.invalid && address?.touched "  class="text-danger " > address is Required</small>
+
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input [class.is-invalid]="email?.invalid && email?.touched " type="email" class="form-control"  formControlName="email" placeholder="We'll never share your email with anyone else." >
+      <div *ngIf="email?.invalid && email?.touched">
+        <small *ngIf="email?.errors?.['required']" class="text-danger " > name is Required</small>
+        <small *ngIf="email?.errors?.['email']" class="text-danger " > It should be of Email format</small>
+      </div>
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+   
+    
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

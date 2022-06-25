@@ -1,0 +1,24 @@
+.heading{
+    color: black;
+    font-weight: bold;
+}
+.btn{
+    /* padding: 6px 20px; */
+    border: 2px solid white;
+    background-color: #467546;
+    color: white;
+    margin: 17px;
+    /* font-size: 1.5rem; */
+    border-radius: 10px;
+    cursor:pointer;
+}
+::placeholder {
+    color: black;
+    
+    
+  }
+  .form-label{
+      font-weight: bold;
+      color: whitesmoke;
+  }
+  

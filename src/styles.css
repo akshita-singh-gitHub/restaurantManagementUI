@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container2{
+    max-width: 80%;
+   margin-left: 109px;
+   margin-top: 56px;
+   padding-left: 23px;
+
+   
+}
+
+.container{
+    max-width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.heading{
+    color: black;
+    font-weight: bold;
+ 
+}
+.btn{
+    /* padding: 6px 20px; */
+    border: 2px solid white;
+    background-color: #467546;
+    color: white;
+    margin: 17px;
+    /* font-size: 1.5rem; */
+    border-radius: 10px;
+    cursor:pointer;
+}
+::placeholder {
+    color: black;
+    
+    
+  }
+  .form-label{
+      font-weight: bold;
+      color: whitesmoke;
+  }
+
+  html{
+    font-size: 16px;
+  }

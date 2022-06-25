@@ -1,0 +1,36 @@
+
+.container2::before{
+    content: "";
+    position: absolute;
+    background: url( '/assets/bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.heading{
+    color: black;
+    font-weight: bold;
+}
+.btn{
+    /* padding: 6px 20px; */
+    border: 2px solid white;
+    background-color: #467546;
+    color: white;
+    margin: 17px;
+    /* font-size: 1.5rem; */
+    border-radius: 10px;
+    cursor:pointer;
+}
+::placeholder {
+    color: black;
+    
+    
+  }
+  .form-label{
+      font-weight: bold;
+      color: whitesmoke;
+  }
+  
